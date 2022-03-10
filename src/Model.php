@@ -863,6 +863,7 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
      * @param  mixed  $offset
      * @return bool
      */
+    #[ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return isset($this->$offset);
